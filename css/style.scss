@@ -12,6 +12,7 @@ $tablet: 1024px;
 $mobileL: 768px;
 $mobileM: 580px;
 $mobileS: 480px;
+$mobileXS: 380px;
 
 $br: 4px;
 
@@ -145,6 +146,21 @@ nav {
 				}
 			}
 		}
+
+		@media screen and (max-width: $mobileXS) {
+			.nav__items {
+				.mobile__menu__btn {
+					svg {
+						width: 30px;
+					}
+				}
+				.nav__btns {
+					button {
+						padding: 6px 12px;
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -163,6 +179,7 @@ header {
 				font-size: min(71px, max(40px + 2vw));
 				font-weight: 400;
 				color: $nativeBlack;
+				margin: 0px;
 			}
 
 			p {

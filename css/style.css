@@ -99,6 +99,14 @@ nav .nav .nav__items .nav__btns button#signup {
     display: block;
   }
 }
+@media screen and (max-width: 380px) {
+  nav .nav .nav__items .mobile__menu__btn svg {
+    width: 30px;
+  }
+  nav .nav .nav__items .nav__btns button {
+    padding: 6px 12px;
+  }
+}
 
 header .header {
   display: flex;
@@ -114,6 +122,7 @@ header .header .header__left h1 {
   font-size: min(71px, max(40px + 2vw));
   font-weight: 400;
   color: #000000;
+  margin: 0px;
 }
 header .header .header__left p {
   margin: 34px 0px;
