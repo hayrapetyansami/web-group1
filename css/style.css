@@ -161,12 +161,18 @@ header .header .header__left .header__left__stars {
 header .header .header__right .header__right__img img {
   display: block;
 }
+@media screen and (max-width: 800px) {
+  header .header {
+    gap: 32px;
+  }
+}
 @media screen and (max-width: 768px) {
   header .header {
     justify-content: center;
     flex-wrap: wrap;
     text-align: center;
     padding-top: 65px;
+    gap: 64px;
   }
   header .header .header__left .header__left__btns,
   header .header .header__left .header__left__stars {
@@ -188,6 +194,9 @@ header .header .header__right .header__right__img img {
   }
 }
 
+main .markets__section {
+  margin-bottom: 128px;
+}
 main .markets__section .markets {
   box-shadow: 0px 0px 16px rgba(9, 24, 26, 0.04);
   border-radius: 4px;
@@ -330,6 +339,9 @@ main .markets__section .why__btc__markets .wbm__items .wbm__item p {
     margin-top: 64px;
   }
 }
+main .trade__section {
+  margin-bottom: 128px;
+}
 main .trade__section h4 {
   font-weight: 400;
   color: #18181B;
@@ -387,6 +399,14 @@ main .trade__section .trade__section__blocks .trade__section__right .trade__sect
   main .trade__section .trade__section__blocks .trade__section__left .trade__items .trade__item {
     flex: 1 1 100%;
     text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  main .markets__section, main .trade__section {
+    margin-bottom: 64px;
+  }
+  main .markets__section .why__btc__markets .wbm__items {
+    gap: 32px;
   }
 }
 
